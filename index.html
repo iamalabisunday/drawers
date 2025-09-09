@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawers</title>
+    <!-- Style Link -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="drawer">
+        <div class="drawer-content">
+          <!-- Drawer Header Section -->
+          <div class="drawer-header">
+            <div class="drawer-header-title">
+              <p>New Project</p>
+              <i class="fa-solid fa-xmark drawer-close"></i>
+            </div>
+            <p class="drawer-header-subtitle">
+              Get started by filling in the information below to create your new
+              project.
+            </p>
+          </div>
+          <!-- Drawer Body Section -->
+          <div class="drawer-body">
+            <!-- Form section -->
+            <form class="form">
+              <div class="project">
+                <label for="name">Project name</label>
+                <input type="text" id="name" class="name" />
+              </div>
+              <div class="project">
+                <label for="description">Description</label>
+                <textarea
+                  name="message"
+                  rows="3"
+                  cols="30"
+                  class="description"
+                ></textarea>
+              </div>
+            </form>
+            <!-- Team Section -->
+            <div class="team">
+              <p>Team Members</p>
+              <div class="team-members">
+                <img src="./Pictures/Alex.avif" alt="Alex" class="member" />
+                <img src="./Pictures/Cara.avif" alt="Alex" class="member" />
+                <img src="./Pictures/Love.avif" alt="Alex" class="member" />
+                <img src="./Pictures/Peter.avif" alt="Alex" class="member" />
+                <img src="./Pictures/Victor.avif" alt="Alex" class="member" />
+                <div class="plus">
+                  <i class="fa-solid fa-plus plus-icon"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Privacy -->
+            <form class="formPrivacy">
+              <p>Privacy</p>
+              <div class="private-section">
+                <!--  -->
+              <div class="private-container">
+                <input type="radio" name="labelRadio" id="public" class="inputRadio" />
+                <div class="private-info">
+                  <label for="public" class="labelRadio">Public access</label>
+                  <p>Everyone with the link will see this project.</p>
+                </div>
+                </div>
+                <!--  -->
+                <div class="private-container">
+                <input type="radio" name="labelRadio" id="private" class="inputRadio" />
+                <div class="private-info">
+                  <label for="private" class="labelRadio">Private to project members</label>
+                  <p>Only members of this project would be able to access.</p>
+                </div>
+                </div>
+                <!--  -->
+                <div class="private-container">
+                <input type="radio" name="labelRadio" id="publicyou" class="inputRadio" />
+                <div class="private-info">
+                  <label for="publicyou" class="labelRadio">Private to you</label>
+                  <p>You are the only one able to access this project.</p>
+                </div>
+                </div>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
